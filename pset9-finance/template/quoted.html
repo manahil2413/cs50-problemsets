@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+
+    <h2 class="mb-4" style="font-family:Roboto;">Stock Quote</h2>
+
+    <div class="card shadow-lg mx-auto text-center" style="width: 22rem;">
+        <div class="card-header bg-primary text-white" style="font-family:Roboto;">
+            Stock Information
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Symbol:</strong> {{ dict.symbol }}</li>
+            <li class="list-group-item"><strong>Company:</strong> {{ dict.name }}</li>
+            <li class="list-group-item"><strong>Price:</strong> {{ dict.price | usd }}</li>
+        </ul>
+
+    </div>
+{% endblock %}
