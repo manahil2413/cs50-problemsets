@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <link href="styles.css" rel="stylesheet">
+  <title>Trivia!</title>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let correct = document.querySelectorAll('.correct');
+      for (let j = 0; j < correct.length; j++) {
+        correct[j].addEventListener('click', function () {
+          correct[j].style.backgroundColor = 'Green';
+          correct[j].parentElement.querySelector('.feedback').innerText = 'Correct!';
+        });
+      }
+
+      let incorrect = document.querySelectorAll('.incorrect');
+      for (let i = 0; i < incorrect.length; i++) {
+        incorrect[i].addEventListener('click', function () {
+          incorrect[i].style.backgroundColor = 'Red';
+          incorrect[i].parentElement.querySelector('.feedback').innerText = 'Incorrect';
+        });
+      }
+
+      document.querySelector('#check').addEventListener('click', function () {
+        let answer = document.querySelector('input');
+        let comment = document.querySelector('#free-response');
+        if (answer.value.trim().toLowerCase() === 'mars') {
+          answer.style.backgroundColor = 'green';
+          comment.innerText = 'Correct!';
+        } else {
+          answer.style.backgroundColor = 'red';
+          comment.innerText = 'Incorrect!';
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="header">
+    <h1>Trivia!</h1>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <h2>Part 1: Multiple Choice</h2>
+      <hr>
+      <!-- TODO: Add multiple choice question here -->
+      <h3>What is the only country in the world whose flag is not rectangular or square in shape?</h3>
+      <button class="incorrect">Bhutan</button>
+      <button class="incorrect">Sri Lanka</button>
+      <button class="incorrect">Maldives</button>
+      <button class="correct">Nepal</button>
+      <p class="feedback"></p>
+    </div>
+
+    <div class="section">
+      <h2>Part 2: Free Response</h2>
+      <hr>
+      <!-- TODO: Add free response question here -->
+      <h3>Which planet is known as the "Red Planet"?</h3>
+      <input type="text" />
+      <button id="check">Check Answer</button>
+      <p class="feedback" id="free-response"></p>
+    </div>
+  </div>
+</body>
+</html>
