@@ -1,0 +1,36 @@
+* {
+     /* font-family: 'Poppins', sans-serif; */
+     background-color: #fdfdfb;
+     margin: 0;
+     padding: 0;
+}
+
+
+.logo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 36px;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+.nav-link {
+    color:#3a3a3a !important;
+    font-weight:500;
+    font-size:16px;
+}
+#web {
+    font-family: 'DM Serif Display', serif;
+    color:#5c5b56;
+    font-size: 28px;
+    margin-top:10px;
+}
+#name {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight:800 !important;
+
+}
+p {
+    font-size: 16px;
+    color: #5e5e5e;
+    max-width: 600px;
+    margin-top: 20px;
+}

@@ -1,0 +1,29 @@
+HTML tags:
+div--- used it as a container
+ul & li --- used it to get unordered list
+nav-- to create navigation bar with links to other webpage
+a href -- to create link between webpages
+h1-- for heading
+p --for paragraph
+span--
+svg-- to attach icons
+section --to group similar content
+button
+
+CSS properties:
+ margin
+ padding
+ background-color
+ color
+ font-family
+ font-weight
+ max-width
+ Moreover, Used element,id and class selector
+
+Bootstrap:
+Created navbar using bootstrap classes.
+used alignment properties for text
+
+Javascript:
+Created alert using javascript
+
